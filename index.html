@@ -1,0 +1,47 @@
+
+<!-- trial 6 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./script.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <form method="post">
+      <label for="name">Name</label>
+      <input required type="text" id="name" name="name" placeholder="Enter name">
+
+      <label for="email">Email</label>
+      <input required type="email" id="email" name="email" placeholder="Enter Email">
+
+      <label for="password">Password</label>
+      <input required type="password" id="password" name="password" placeholder="Enter password">
+
+      <label for="dob">Date of Birth</label>
+      <input required type="date" id="dob" name="dob" oninput="this.setCustomValidity('')">
+
+      <div>
+        <input type="checkbox" id="acceptTerms" name="acceptTerms">
+        <label for="acceptTerms">Accept Terms & Conditions</label>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+  </div>
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Dob</th>
+      <th>Accepted Terms?</th>
+    </thead>
+  </table>
+</body>
+
+</html>
